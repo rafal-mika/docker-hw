@@ -1,6 +1,4 @@
-# docker-hw
-
-## Task 1 - docker-volume
+# Task 1 - docker-volume
 
 Application is looking for the config file in path ````/app/data````
 
@@ -13,3 +11,6 @@ Application is looking for the config file in path ````/app/data````
     To run container, use command ````docker run --name <your-container-name> -v <config-file-path-in-host-os>:/app/data <your-image-name>````
     
     e.g. ````docker run --name py-app -v ${pwd}/config:/app/data my-app-img````
+
+
+  
