@@ -19,7 +19,7 @@ To read an entry with a specified key:
 
 - browser: `http://<host>:5000/api/keys/<key>`
 - cUrl: `curl http://<host>:5000/api/keys/<key>`
-- Windows PowerShell: Invoke-WebRequest -Uri `http://<host>:5000/api/keys/<key>`
+- Windows PowerShell: `Invoke-WebRequest -Uri http://<host>:5000/api/keys/<key>`
 
 To write an entry with a specified key:
 
