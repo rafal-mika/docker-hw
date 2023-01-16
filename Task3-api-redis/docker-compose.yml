@@ -4,15 +4,18 @@ services:
     build:
       context: ./api/
       dockerfile: Dockerfile
+    environment:
+      REDIS_HOST: "db"
+      REDIS_PORT: 6379
     ports:
-      - 5000:80
+      - 5000:5000
     depends_on:
       - db
     restart: on-failure
   db:
-    image: redis:7
-    environment:
-      REDIS_PASSWORD: redis_pass
+    image: redis:latest
+    # environment:
+    #   REDIS_PASSWORD: redis_pass
     ports:
       - 6379:6379
     volumes:
